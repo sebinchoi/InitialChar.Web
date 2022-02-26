@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>초성</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      
+      .fill { 
+        min-height: 99%;
+        height: 99%;
+      }
+
+      body {
+        min-height: 100vh;
+        height: 100vh;
+        padding: 0;
+      }
+
+      textarea {
+        font-size: xx-large;
+      }
+
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <!-- <link href="form-validation.css" rel="stylesheet"> -->
+  </head>
+  <body class="bg-light">
+    
+    <div class="fill container">
+      <main class="fill">
+        <div class="h-100 row">
+          <h4>초성</h4>
+          <textarea id="txtOrigin" class="h-75 col-12"></textarea>
+          <p></p>
+          <button class="col-3 btn btn-primary btn-lg" onclick="btnSend_OnClick()">변환</button>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="h-100 row">
+          <textarea id="txtResult" readonly="true" class="col-12" onkeypress="txtResult_OnKeyPress(event)"></textarea>
+        </div>
+      </main>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/initialChar.js"></script>
+
+  </body>
+</html>
